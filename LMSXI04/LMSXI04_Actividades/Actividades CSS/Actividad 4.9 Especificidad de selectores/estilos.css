@@ -1,0 +1,38 @@
+/*especificidad: 1*/
+body{
+  color: blue;
+}
+/*especificidad: 1*/
+p {
+  color: deeppink;
+}
+
+/*especificidad: */
+#p-destacado {
+  color: green;
+}
+
+/*especificidad: */
+.cita {
+    color: gray;
+  }
+/*especificidad: */
+.error{
+    color:red;
+}
+
+/*especificidad */
+section > p.cita {
+    color: darkorchid;
+  }
+
+/*especificidad: */
+p.cita {
+  color:greenyellow; 
+}
+
+/*especificidad:  */
+article > section > p {
+  color: dodgerblue;
+}
+

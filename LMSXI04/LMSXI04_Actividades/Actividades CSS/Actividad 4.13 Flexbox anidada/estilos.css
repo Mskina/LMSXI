@@ -1,0 +1,77 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background: darkcyan;
+  height: 100px;  
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
+}
+
+article {
+  padding: 10px;
+  margin: 10px;
+  background: rgb(226, 161, 207);
+  flex-basis: 200px;
+  flex-grow: 1;
+}
+
+footer {
+  height: 100px;
+  background-color: darkcyan;
+  opacity: 0.5;
+  font-size: 1.5em; 
+}
+
+button {
+  margin: 5px;
+  padding: 1%;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+section {
+  display: flex;
+}
+
+article:nth-of-type(3) {
+  flex-grow: 3;
+}
+
+article:nth-of-type(3) > div:first-child {
+border:2px solid red;
+display: flex;
+flex-wrap: wrap;
+}
+
+#col2_p {
+display: flex;
+flex-direction: row;
+}
+
+
+
+
+
+
+
+div button{
+  flex: 1;
+}
+
+
+
+
+
+
+

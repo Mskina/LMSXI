@@ -1,0 +1,19 @@
+A: El número de categorías que tiene el item que ocupa la 2ª posición
+
+count(//item[position()=2]/category)
+
+
+
+B: Los textos dentro de los títulos de los elementos item que contienen una categoría con el texto Xi Jinping.
+
+//item/category[contains(.,"Xi Jinping")]/../title/text()
+
+
+C: Los textos dentro de los elementos <link> de los elementos <item> cuyo creador contiene el texto "Fariza"
+
+//item/dc:creator[contains(.,"Fariza")]/../link/text()
+
+
+D: La URL y el tipo de medio del contenido cuyo subelemento credit indica que proviene de la agencia Reuters.
+
+//media:credit[contains(.,"Reuters")]/../@url | //media:credit[contains(.,"Reuters")]/../@type

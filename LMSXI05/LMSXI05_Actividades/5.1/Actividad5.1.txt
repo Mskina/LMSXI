@@ -1,0 +1,64 @@
+1. Nombre y apellidos del contacto con identificador "p02" concatenados con un espacio
+concat(//contactos/persona[@id="p02"]/identificadores/nombre, " ", //contactos/persona[@id="p02"]/identificadores/apellidos)
+
+
+
+2. El elemento <movil> que contenga los números 123 en ese orden, con etiquetas de apertura y cierre.
+
+/agenda/propietario/telefonos[contains(movil, "123")]/movil | /agenda/contactos/persona/telefonos[contains(movil, "123")]/movil
+--Otras formas con descendientes (no desde la raíz):
+
+//movil[contains(., "123")]
+//telefonos[contains(movil, "123")]/movil
+
+
+
+3. El elemento <movil> que contenga los números 12 ó  34, con etiquetas de apertura y cierre.
+//movil[contains(., "12") or contains(., "34")]
+
+
+4. El nombre de los contactos que comienzan por J
+//nombre[starts-with(., "J")]/text()
+
+/agenda/contactos/persona/identificadores[starts-with(nombre, "J")]/nombre/text()
+--Otra forma:
+/agenda/contactos/persona/identificadores/nombre[starts-with(., "J")]/text()
+
+
+
+5. Los ids de contactos que no tengan teléfono del trabajo
+
+/agenda/contactos/persona/telefonos[not(trabajo) or trabajo=""]/../@id
+
+
+
+
+
+6. El número de diferentes teléfonos que tiene el contacto con identificador "p01"
+count(/agenda/contactos/persona[@id="p01"]/telefonos/*)
+
+por qué no funciona?? distinct-values(//contactos/persona[@id="p01"]/telefonos/*)
+
+
+7. Los descendientes de telefonos que comiencen por 6, con etiquetas de apertura y cierre
+//telefonos/*[starts-with(.,"6")]
+
+/agenda/contactos/persona/telefonos/*[starts-with(.,"6")]|
+/agenda/propietario/telefonos/*[starts-with(.,"6")]
+
+
+
+8. Los nombres de personas cuya longitud de caracteres sea mayor que 5
+//contactos/persona/identificadores/nombre[string-length(.)>5]/text()
+
+
+9. Los identificadores de los contactos que ocupan las posiciones impares
+//contactos/persona[position() mod 2=1]/@id
+
+
+
+
+
+
+
+

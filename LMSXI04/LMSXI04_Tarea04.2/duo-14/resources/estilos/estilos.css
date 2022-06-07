@@ -1,0 +1,225 @@
+/*Apartado 3*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/*Apartado 4*/
+
+h1 {
+  text-align: center;
+  font-size: 350%;
+}
+
+/*Apartado 5*/
+header nav {
+  display: flex;
+  font-weight: bold;
+  font-size: 120%;
+  padding: 10px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+nav a {
+  flex-grow: 0;
+  padding: 15px;
+}
+
+/*Apartado 6*/
+
+a:link {
+  color: #6ca6d9;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1c3659;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #2b558c;
+  text-decoration: underline;
+}
+a:active {
+  color: #3f77bf;
+  text-decoration: underline;
+}
+
+/*Apartado 7*/
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 200%;
+}
+
+/*Apartado 8*/
+
+#biografia,
+#galeria,
+#recursos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#biografia h2,
+#galeria h2,
+#recursos h2 {
+  width: 100%;
+}
+
+#biografia article,
+#galeria article {
+  flex-grow: 1;
+  flex-basis: 350px;
+  padding: 0px 20px 0px 20px;
+  margin: 0px 20px 0px 20px;
+}
+
+#recursos ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#recursos li {
+  flex-basis: 350px;
+  padding: 0px 20px 0px 20px;
+  margin: 0px 20px 0px 20px;
+}
+
+h3 {
+  padding: 10px 0px 10px 0px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+figure {
+  text-align: center;
+}
+
+/*Apartado 9*/
+
+caption,
+figcaption {
+  font-style: italic;
+}
+
+figcaption {
+  margin: 20px 0px 30px 0px;
+}
+
+table > caption {
+  caption-side: bottom;
+}
+
+/*Apartado 10*/
+
+p {
+  text-align: justify;
+}
+
+/*Apartado 11*/
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Apartado 12*/
+
+ul > li > span {
+  font-weight: bold;
+}
+
+/*Apartado 13*/
+
+#conferencias,
+#conferencias > p {
+  text-align: center;
+}
+
+input[type="submit"] {
+  background-color: #0c1726;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 16px 32px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+input[type="submit"]:active {
+  color: #3f77bf;
+}
+
+input[type="text"],
+select {
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+label,
+legend {
+  font-weight: bold;
+}
+
+/*Apartado 14*/
+
+address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+address > p:first-of-type {
+  width: 100%;
+}
+
+/*Apartado 15*/
+
+footer {
+  background-color: #6ca6d9;
+}
+
+footer > p {
+  text-align: center;
+}
+
+footer hr {
+  border: 1px solid #0c1726;
+}
+
+/*Apartado 16*/
+
+header div > h2 {
+  color: #6ca6d9;
+  background-color: #0c1726;
+  font-size: 3vw;
+  padding: 16px 32px;
+  margin: 0px 0px;
+}
+
+/*Apartado 17*/
+
+header div img {
+  width: 100%;
+}

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<notas>
+   <alumno convocatoria="Septiembre">
+      <nombre>Carlos</nombre>
+      <apellidos>Couto Cruz</apellidos>  
+      <cuestionarios>8.0</cuestionarios>
+      <tareas>8.0</tareas>
+      <examen>6.0</examen>
+      <final>8.0</final>
+   </alumno>
+   <alumno convocatoria="Junio">
+      <nombre>Jose</nombre>
+      <apellidos>Juncal Jarrón</apellidos>   
+      <cuestionarios>3.0</cuestionarios>
+      <tareas>4.5</tareas>
+      <examen>4.0</examen>
+      <final>4.25</final>
+   </alumno>
+   <alumno convocatoria="Junio">
+      <nombre>Ana</nombre>
+      <apellidos>Antas Aparicio</apellidos>    
+      <cuestionarios>8.0</cuestionarios>
+      <tareas>9.0</tareas>
+      <examen>9.0</examen>
+      <final>8.5</final>
+   </alumno>
+   <alumno convocatoria="Septiembre">
+      <nombre>Roberto</nombre>
+      <apellidos>Ronda Roldán</apellidos>    
+      <cuestionarios>6.0</cuestionarios>
+      <tareas>7.0</tareas>
+      <examen>6.0</examen>
+      <final>6.5</final>
+   </alumno>
+   <alumno convocatoria="Septiembre">
+      <nombre>Concepción</nombre>
+      <apellidos>Canto Crecente</apellidos>
+        <cuestionarios>4.5</cuestionarios>
+      <tareas>3.75</tareas>
+      <examen>2.0</examen>
+      <final>3.5</final>
+   </alumno>
+   <alumno convocatoria="Junio">
+      <nombre>Esther</nombre>
+      <apellidos>Egea Écija</apellidos>    
+      <cuestionarios>9.0</cuestionarios>
+      <tareas>9.8</tareas>
+      <examen>9.3</examen>
+      <final>9.5</final>
+      </alumno>
+      
+       <alumno convocatoria="Junio">
+      <nombre>Manuel</nombre>
+      <apellidos>Muñoz Miño</apellidos>    
+      <cuestionarios>2.0</cuestionarios>
+      <tareas>3.0</tareas>
+      <examen>2.0</examen>
+      <final>6</final>
+      </alumno>
+</notas>

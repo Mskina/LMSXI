@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moda-Formulario</title>
+</head>
+
+<body>
+    <h1>Tienda de moda</h1>
+    <form action="http://localhost/ud4/formulario.php" method="get">
+
+        <div>
+            <label for="prenda">Seleccione un tipo de prenda:</label>
+            <select name="prenda_name[]" id="prenda" multiple size="6">
+                <optgroup label="Mujer">
+                    <option value="abrigos-mujer">Abrigos</option>
+                    <option value="tops">Tops</option>
+                </optgroup>
+                <optgroup label="Hombre">
+                    <option value="abrigos-hombre">Abrigos</option>
+                    <option value="camisas">Camisas</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="color">Color:</label>
+            <input type="color" name="color-name" id="color" list="sug-color">
+            <datalist id="sug-color">
+                <option value="#000000"></option>
+                <option value="#ffffff"></option>
+                <option value="#888888"></option>
+            </datalist>
+        </div>
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+
+</html>

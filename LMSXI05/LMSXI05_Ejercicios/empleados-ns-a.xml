@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- declaramos un espacio de nombres por defecto que afectará al elemento donde se declara
+     si no tiene un prefijo de otro ns y si no se redefinen otros ns por defecto en su interior
+    Aprovecho para declarar otro ns con prefijo para calificar a los elementos puesto y sus descendientes
+    -->
+<empleados xmlns="http://www.teleco-galicia.com/empleados"
+xmlns:pt="http://www.teleco-galicia.com/puestos">
+    <empleado id="0001">
+        <nombre>Juan López Martínez</nombre>
+        <dni>12345678-A</dni>
+        <desde>2015-09-01</desde>
+        <cv>
+            <!-- aquí hay que calificar todos los elementos porque si no se calificaran con el prefijo pt, se les
+                aplicaría el ns por defecto -->
+            <pt:puesto>
+                <pt:nombre>Administrador de sistemas</pt:nombre>
+                <pt:empresa>Telecomunicaciones Galicia S.A.</pt:empresa>
+                <pt:desde>2015-09-01</pt:desde>
+                <pt:hasta></pt:hasta>
+            </pt:puesto>
+            <pt:puesto>
+                <pt:nombre>Soporte de primer nivel</pt:nombre>
+                <pt:empresa>Infraestructuras Norte</pt:empresa>
+                <pt:desde>2015-08-31</pt:desde>
+                <pt:hasta>2014-08-31</pt:hasta>
+            </pt:puesto>
+        </cv>
+    </empleado>
+
+    <empleado id="0002">
+        <nombre>Ana Casal Brea</nombre>
+        <dni>23456789-B</dni>
+        <desde>2021-09-01</desde>
+        <cv>
+            <pt:puesto>
+                <pt:nombre>Project manager</pt:nombre>
+                <pt:empresa>Telecomunicaciones Galicia S.A.</pt:empresa>
+                <pt:desde>2021-09-01</pt:desde>
+                <pt:hasta></pt:hasta>
+            </pt:puesto>
+            <pt:puesto>
+                <pt:nombre>Consultora funcional</pt:nombre>
+                <pt:empresa>Grupo Norteco</pt:empresa>
+                <pt:desde>2018-02-01</pt:desde>
+                <pt:hasta>2021-08-31</pt:hasta>
+            </pt:puesto>
+        </cv>
+    </empleado>
+</empleados>

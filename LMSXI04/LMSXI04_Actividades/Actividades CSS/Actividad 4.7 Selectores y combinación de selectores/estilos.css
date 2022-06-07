@@ -1,0 +1,46 @@
+/* El color de fondo del elemento body debe ser whitesmoke */
+body {
+    background-color: whitesmoke;
+}
+/* El color de la letra de todos los elementos HTML debe ser gris */
+* {
+    color: gray;
+}
+/* El color de borde de las líneas horizontales debe ser azul */
+hr {
+    border-color: blue
+}
+/*
+La clase resaltado debe tener un color de fondo amarillo */
+.resaltado {
+    background-color: yellow;
+}
+
+/* El elemento con identificador t1 debe tener la letra de color azul */
+#t1 {
+    color: blue;
+}
+
+/* Los encabezados de segundo y tercer orden deben tener la letra del color verde */
+h2,h3 {
+    color: green;
+}
+/* Los enlaces descendientes de cualquier nivel de las listas desordenadas deben mostrarse en color negro */
+ul a {
+    color: black;
+}
+
+/* A los párrafos que sean hermanos de header, no hace falta que sean adayacentes, tendrán un color de fondo #ccdeee */
+header ~ p {
+    background-color: #ccdeee;
+}
+
+/* A los párrafos que sean hermanos adyacentes de otros párrafos un color de fondo blanco */
+p + p {
+    background-color: white;
+}
+
+/* Los enlaces hijos directos de footer se mostrarán con una letra de color naranja. */
+footer > a {
+    color: orange;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario contacto</title>
+</head>
+<body>
+    <h1>Formulario de contacto</h1>
+    <form action="http://localhost/ud4/formulario.php"
+    method="post" enctype="multipart/form-data">
+
+    <div>
+        <label for="nombre">Introduzca su nombre:</label>
+        <input type="text" name="nombre" id="nombre" required  maxlength="25" size="20" 
+        placeholder="Nombre">
+    </div>
+
+
+    <div>
+        <label for="dni">Introduzca su DNI:</label>
+        <input type="text" name="dni" id="dni" required pattern="[0-9]{8}[A-Z]" placeholder="12345678X">
+    </div>
+
+    <div>
+        <label for="email">Introduzca su   email:</label>
+        <input type="email" name="email" id="email" required>
+    </div>
+
+    <div>
+        <label for="url">Introduzca la URL de la página web donde ha encontrado el problema:</label>
+        <input type="url" name="url" id="url">
+    </div>
+
+
+    <div>
+        <label for="detalles">Describa aquí el problema detalladamente:</label>
+    <textarea name="detalles"   id="detalles" cols="50" rows="30" required maxlength="1500"
+    placeholder="Describa aquí el problema detalladamente"></textarea>
+    </div>
+
+
+    <div>
+        <label for="numero">Introduzca el número de veces que ha intentado realizar la operación:</label>
+        <input type="number" name="numero" id="numero" min="1">
+    </div>
+
+
+    <div>
+        <label for="ficheros">Adjunte uno o varios ficheros (solo se aceptan imágenes: jpg, png, etc.):</label>
+        <input type="file" name="ficheros[]" id="ficheros" multiple accept="image/*">
+    </div>
+
+    <div>
+        <input type="submit" value="Enviar">
+    </div>
+
+    </form>
+    
+</body>
+</html>

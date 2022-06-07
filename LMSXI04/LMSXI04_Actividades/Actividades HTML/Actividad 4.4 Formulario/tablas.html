@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+        /*Para mostrar un borde de un píxel negro continuo alrededor de cada tabla, cabecera y celda de datos
+        */
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            /* Y un único borde unificado */
+        }
+
+        /* Para colocar el título bajo la tabla: 
+        caption{
+            caption-side: bottom;
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>Tablas HTML</h1>
+
+    <h2>Previsión aumento de ventas 2022</h2>
+
+    <table>
+        <caption>Previsión aumento de ventas por empleado</caption>
+        <thead>
+            <tr>
+                <th colspan="7">PREVISIÓN AUMENTO EN VENTAS</th>
+            </tr>
+            <tr>
+                <th colspan="2"></th>
+                <th>Trimestre 1</th>
+                <th>Trimestre 2</th>
+                <th>Trimestre 3</th>
+                <th>Trimestre 4</th>
+                <th>TOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Año 2022</td>
+                <td>Ana</td>
+                <td>1450</td>
+                <td>1475</td>
+                <td>1500</td>
+                <td>1525</td>
+                <td>+75</td>
+            </tr>
+            <tr>
+                <td>Eduardo</td>
+                <td>1325</td>
+                <td>1350</td>
+                <td>1380</td>
+                <td>1425</td>
+                <td>+100</td>
+            </tr>
+            <tr>
+                <td>Matilde</td>
+                <td>1750</td>
+                <td>1800</td>
+                <td>1900</td>
+                <td>1950</td>
+                <td>+200</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">TOTAL</td>
+                <td>4525</td>
+                <td>4625</td>
+                <td>4780</td>
+                <td>4900</td>
+                <td>+375</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Resumen tablas HTML</h2>
+    <table>
+        <caption>Resumen elementos <code>&lt;table&gt;</code></caption>        
+        <thead>
+            <tr>
+                <th>Orden de aparición</th>
+                <th>Subelemento</th>
+                <th>Contenido del subelemento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><code>&lt;caption&gt;</code></td>
+                <td>Texto con el título de la tabla</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><code>&lt;colgroup&gt;</code></td>
+                <td>Cero o más elementos <code>&lt;col&gt;</code></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><code>&lt;thead&gt;</code></td>
+                <td>Cero o más elementos <code>&lt;tr&gt;</code></td>
+            </tr>
+            <tr>
+                <td>4.a)</td>
+                <td><code>&lt;tbody&gt;</code></td>
+                <td>Cero o más elementos <code>&lt;tr&gt;</code></td>
+            </tr>
+            <tr>
+                <td rowspan="2">4.b)</td>
+                <td rowspan="2"><code>&lt;tr&gt;</code></td>
+                <td>Cero o más elementos <code>&lt;td&gt;</code></td>
+            </tr>
+            <tr>
+                <td>Cero o más elementos <code>&lt;th&gt;</code></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><code>&lt;tfoot&gt;</code></td>
+                <td>Cero o más elementos <code>&lt;tr&gt;</code></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Más información en el <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table"
+                        target="_blank">enlace</a></td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+</body>
+
+</html>

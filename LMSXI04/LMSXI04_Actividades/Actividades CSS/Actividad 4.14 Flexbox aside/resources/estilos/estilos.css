@@ -1,0 +1,130 @@
+body {
+  font-family: "Heebo", sans-serif;
+  font-size: 1.1em;
+  color: #1a374d;
+}
+/*Encabezados*/
+h1,
+h2,
+h3,
+h4 {
+  color: #2b2894;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  font-style: italic;
+  text-transform: uppercase;
+  text-indent: 8vw;
+}
+
+/*Enlaces*/
+
+a:link {
+  color: #3b36c7;
+}
+a:visited {
+  color: #48467a;
+}
+a:hover {
+  text-decoration: underline;
+  color: #938ffb;
+}
+a:active {
+  font-size: 1.2em;
+}
+
+a {
+  font-weight: bold;
+}
+/*Párrafos*/
+
+p {
+  text-indent: 3vw;
+  text-align: justify;
+  line-height: 130%;
+  margin: 2%;
+}
+
+p .importante {
+  background-color: yellow;
+}
+
+article section:nth-of-type(2) {
+  background-image: url("../images/background.jpg");
+}
+
+/*Tablas*/
+caption {
+  caption-side: bottom;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+td,
+th {
+  padding: 10px;
+  vertical-align: bottom;
+}
+/*Formulario*/
+#formulario h3,
+form {
+  text-align: center;
+}
+form label {
+  margin-right: 5px;
+  padding: 5px 0;
+  text-align: right;
+}
+form input {
+  border-radius: 4px;
+  padding: 4px;
+  background-color: aliceblue;
+}
+input[type="submit"] {
+  background-color: #48467a;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+form div {
+  margin: 2% 0;
+}
+/*footer*/
+
+footer,
+footer p {
+  text-indent: initial;
+  text-align: center;
+}
+/*header*/
+header ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+ul li {
+  list-style: none;
+}
+/*aside*/
+
+aside {
+  background: linear-gradient(#9fb5f3, #bfd0e7);
+  border-radius: 10px;
+}
+aside header h4 {
+  color: white;
+}
+
+/*main*/
+main { 
+  background-color: azure;
+}
+

@@ -1,0 +1,40 @@
+body{
+	font-family: Arial;
+	
+}
+
+table, th, td{
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin: 1.5em;
+	width: 90vw;
+	
+}
+td{
+	padding: 0.25em;
+}
+
+
+.aprobado{
+	color:green;
+}
+
+.suspenso{
+	color:red;
+}
+
+.aprobado, .suspenso{
+	text-align: center;
+}
+.modulo_title {
+	background-color: #dfe7f3;
+}
+
+.profesor{
+	background-color: #f7e4ba;
+}
+
+
+.total{
+	text-align: right;
+}

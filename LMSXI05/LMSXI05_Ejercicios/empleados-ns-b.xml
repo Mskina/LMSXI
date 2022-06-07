@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<e:empleados xmlns:e="http://www.teleco-galicia.com/empleados"
+xmlns:p="http://www.teleco-galicia.com/puestos">
+    <e:empleado id="0001">
+        <e:nombre>Juan López Martínez</e:nombre>
+        <e:dni>12345678-A</e:dni>
+        <e:desde>2015-09-01</e:desde>
+        <e:cv>
+            <p:puesto>
+                <p:nombre>Administrador de sistemas</p:nombre>
+                <p:empresa>Telecomunicaciones Galicia S.A.</p:empresa>
+                <p:desde>2015-09-01</p:desde>
+                <p:hasta></p:hasta>
+            </p:puesto>
+            <p:puesto>
+                <p:nombre>Soporte de primer nivel</p:nombre>
+                <p:empresa>Infraestructuras Norte</p:empresa>
+                <p:desde>2015-08-31</p:desde>
+                <p:hasta>2014-08-31</p:hasta>
+            </p:puesto>
+        </e:cv>
+    </e:empleado>
+
+    <e:empleado id="0002">
+        <e:nombre>Ana Casal Brea</e:nombre>
+        <e:dni>23456789-B</e:dni>
+        <e:desde>2021-09-01</e:desde>
+        <e:cv>
+            <p:puesto>
+                <p:nombre>Project manager</p:nombre>
+                <p:empresa>Telecomunicaciones Galicia S.A.</p:empresa>
+                <p:desde>2021-09-01</p:desde>
+                <p:hasta></p:hasta>
+            </p:puesto>
+            <p:puesto>
+                <p:nombre>Consultora funcional</p:nombre>
+                <p:empresa>Grupo Norteco</p:empresa>
+                <p:desde>2018-02-01</p:desde>
+                <p:hasta>2021-08-31</p:hasta>
+            </p:puesto>
+        </e:cv>
+    </e:empleado>
+</e:empleados>

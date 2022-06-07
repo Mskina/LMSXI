@@ -1,0 +1,71 @@
+body {  
+  font-size: 1.1em;
+  color: #1a374d;
+}
+/*Encabezados*/
+h1,
+h2,
+h3,
+h4 {
+  color: #2b2894;
+}
+
+
+/*Enlaces*/
+
+a:link {
+  color: #3b36c7;
+}
+a:visited {
+  color: #48467a;
+}
+a:hover {
+  text-decoration: underline;
+  color: #938ffb;
+}
+a:active {
+  font-size: 1.2em;
+}
+
+
+/*Párrafos*/
+
+
+
+
+
+
+
+
+
+
+
+/*Tablas*/
+caption {
+  caption-side: bottom;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse; 
+  }
+
+/*Formulario*/
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+
+footer, footer p {
+  text-align: center;
+}
+
+

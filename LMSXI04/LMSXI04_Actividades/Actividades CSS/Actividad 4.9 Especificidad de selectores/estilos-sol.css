@@ -1,0 +1,85 @@
+﻿/*especificidad: 1*/
+body{
+  color: blue;
+}
+/*especificidad: 1*/
+p {
+  color: deeppink;
+}
+
+/*especificidad: 100*/
+#p-destacado {
+  color: green;
+}
+
+/*especificidad: 10*/
+.cita {
+    color: gray;
+  }
+/*especificidad: 10*/
+.error{
+    color:red;
+}
+
+/*especificidad: 1+1+10 = 12*/
+section > p.cita {
+    color: darkorchid;
+  }
+
+/*especificidad: 10+1=11*/
+p.cita {
+  color:greenyellow; 
+}
+
+/*especificidad: 1+1+1=3*/
+article > section > p {
+  color: dodgerblue;
+}
+
+/*
+
+a) ¿Por qué el primer párrafo tiene letra de color negro?
+Porque tiene un estilo inline con el atributo style: style="color: black;"
+Tiene una especificidad de 1000
+
+
+b) ¿Por qué no se aplica al segundo párrafo la regla  .cita {  color: gray;  }?
+Porque aunque se le  podrían  aplicar también otras reglas con los selectores:
+section > p.cita 
+p.cita
+.cita
+etc. 
+(Todas ellas se ven ya ordenadas en las herramientas de desarrollador)
+se le aplica la regla de mayor especificidad (12), es decir:  section > p.cita 
+
+
+c) ¿Por qué el tercer párrafo tiene letra de color verde?
+
+Porque se aplica una regla con selector de id con una especificidad de 100, mayor que cualquier otra aplicable.
+
+
+d) ¿Por qué al cuarto y quinto párrafos no se les aplican las reglas p {  color: orange; }  
+ni  p {  color: deeppink;} ?
+Porque hay una regla aplicable de mayor especificidad (3 versus 1): 
+article > section > p {
+    color: dodgerblue;
+}
+
+e) ¿Por qué el último párrafo se ve de color naranja y no rosa? 
+ Porque a igual especificidad, en caso de conflicto, la última regla tiene mayor prioridad.
+ En el enunciado primero se vincula la hoja de estilos externa y, a continuación, se añade la hoja de estilos interna.
+La última será la regla contenida en la hoja interna, p{color: orange;}
+
+¿De qué color se mostraría si se alterna el orden de la hoja de estilos interna y externa?
+Se mostraría rosa. Al cambiar el orden, la última regla aplicable será la de la hoja de estilos externa.
+
+
+f) ¿Por qué Sección1 1 se ve de color rojo y no gris?
+Se aplican las clases error y cita por el uso de ambas en header:   <header class="error cita">
+Normalmente se aplicarían las dos clases.
+En la hoja de estilos, ambas tienen la misma especificidad y cambian la misma propiedad, luego ganará la que esté en último lugar.
+En el enunciado es la clase error.
+Obsérvese que si se cambia el orden en la hoja de estilos externa de las reglas con selectores .error y .cita, 
+Sección 1 se verá de color gris.
+
+*/

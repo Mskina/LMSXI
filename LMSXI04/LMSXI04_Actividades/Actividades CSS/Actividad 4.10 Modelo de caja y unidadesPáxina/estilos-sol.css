@@ -1,0 +1,31 @@
+html{
+    font-size: 20px;
+}
+
+body{
+    font-size: 18px;
+}
+
+.box{
+    border-style: solid dashed dotted double;
+    border-color: black red;
+    border-width: 4px 6px;
+    width: 800px;
+    height: 200px;
+    background-color: lightblue;
+    padding: 2% 1% 2% 1%;    
+    margin: 2vw; /* relativo a html y no a body*/    
+}
+
+.box p:first-of-type{
+    border: 1px solid black;
+    font-size: 1.5em; /*Relativo al tipo de letra del padre: body*/
+}
+
+.box p:nth-of-type(2){
+    border: 1px solid red;
+    font-size: 1.5rem; /*Relativo al tipo de letra del elemento raíz: html*/
+}
+
+
+

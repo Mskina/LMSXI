@@ -1,0 +1,78 @@
+/* Añade en estilos.css las siguientes regla para mostrar los bordes de las tablas. */
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+
+/*El color de los enlaces no visitados debería ser azul*/
+a:link {
+    color: blue;
+  }
+
+/*El color de los enlaces cuando se ha visitado debe ser gris*/
+a:visited {
+    color: grey;
+}
+
+/*El color de los enlaces cuando el ratón pase por encima debe ser verde*/
+a:hover {
+    color:green;
+}
+
+/*El color de los enlaces cuando se hace clic sobre el enlace debe ser rojo.*/
+a:active {
+    color: red;
+}
+
+/*El color del elemento th que sea el primer hijo dentro de un grupo de hermanos
+**debe ser azul*/
+th:first-child { /*selecciona los elementos que sean el primer hijo directo de un grupo de hermanos*/
+    color: blue;
+}
+
+/*El color de fondo del primer elemento de tipo tr que sea descendiente de thead
+**debe ser silver*/
+thead>tr:first-of-type { /*selecciona el primer elemento de un grupo de hermanos*/
+    background-color:silver;
+} 
+
+/*El color de fondo de los elementos tr pares dentro de tbody debe ser lightblue*/
+tbody>tr:nth-child(even) { /*selecciona uno o más elementos en función de su posición entre un grupo de hermanos*/
+    background-color: lightblue; /*even:par*/
+}
+
+/*El color de fondo de los elementos tr impares dentro de tbody debe ser
+**lightgoldenrodyellow*/
+tbody>tr:nth-child(odd) { /*odd:impar*/
+    background-color: lightgoldenrodyellow;
+}
+
+/*El color de fondo del primer elemento de tipo td dentro de la primera tr que sea
+**hija directa de tbody debe ser whitesmoke*/
+tbody>tr:first-of-type>td:first-child {
+    background-color: whitesmoke;
+}
+
+/*Los descendientes de footer que no sean enlaces deben tener un color de fondo
+**yellowgreen*/
+footer:not(a) { /*elementos que no coinciden con una lista de selectores*/
+    background-color: yellowgreen;
+}
+
+/*Los elementos con un atributo id deben tener color de fondo tomato*/
+[id] {
+    background-color:tomato;
+}
+
+/*Los elementos a con un atributo href que comiencen por https deben tener color de
+**fondo turquoise*/
+a[href^="https"] {
+    background-color: turquoise;
+}
+
+/*Los elementos a con un atributo target="_blank" deben deben visualizarse con color
+**de fondo lightgreen*/
+a[target="_blank"] {
+    background-color: lightgreen;
+}

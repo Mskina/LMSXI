@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<acta ciclo="ASIR" eval="1" tipo="telematica" id="0144">
+	<fecha>2020-12-22</fecha>
+	<modalidad>presencial</modalidad>
+	<curso>2020-2021</curso>
+	<tutor>
+
+		<apellido1>Foz</apellido1>
+		<apellido2>Fernández</apellido2>
+		<nombre>Filomena</nombre>
+		<dni>55555555-F</dni>
+	</tutor>
+	<tutor>
+		<nombre>Jacinta</nombre>
+		<apellido1>Jáuregui</apellido1>
+		<apellido2>Juncal</apellido2>
+
+		<dni>55555556-J</dni>
+	</tutor>
+	<modulo codigo="C1">
+		<profesor mod="C1">
+			<nombre>Luis</nombre>
+			<apellido1>Loureiro</apellido1>
+			<apellido2>Lápiz</apellido2>
+			<dni>55555556-L</dni>
+
+		</profesor>
+
+		<alumno>
+			<nombre>María</nombre>
+			<apellido1>Mouriz</apellido1>
+			<apellido2>Muñoz</apellido2>
+			<dni>55555557-M</dni>
+			<cualificacion>1</cualificacion>
+		</alumno>
+
+		<alumno>
+			<nombre>Ana</nombre>
+			<apellido1>Antón</apellido1>
+			<apellido2>Arias</apellido2>
+			<dni>55555557-A</dni>
+			<cualificacion>5</cualificacion>
+		</alumno>
+
+	</modulo>
+
+
+	<modulo codigo="C2">
+		<profesor mod="C2">
+
+			<apellido1>Borrás</apellido1>
+			<apellido2>Brión</apellido2>
+			<nombre>Bernando</nombre>
+			<dni>55555556-B</dni>
+		</profesor>
+		<!-- No hay alumnos en este módulo -->
+	</modulo>
+
+	<modulo codigo="C3">
+		<profesor mod="C3">
+			<nombre>Carmen</nombre>
+			<apellido1>Couce</apellido1>
+			<apellido2>Cruz</apellido2>
+			<dni>55555556-C</dni>
+		</profesor>
+		
+		<alumno>
+			<nombre>Iago</nombre>
+			<apellido1>Iturraiz</apellido1>
+			<apellido2>Inda</apellido2>
+			<dni>55555557-I</dni>
+			<cualificacion>4</cualificacion>
+		</alumno>
+		
+		<alumno>
+			<nombre>María</nombre>
+			<apellido1>Mouriz</apellido1>
+			<apellido2>Muñoz</apellido2>
+			<dni>55555557-M</dni>
+			<cualificacion>7</cualificacion>
+		</alumno>
+
+	</modulo>
+	
+	
+	<modulo codigo="C4">
+		<profesor mod="C4">
+			<nombre>Lucía</nombre>
+			<apellido1>Luarca</apellido1>
+			<apellido2>López</apellido2>
+			<dni>55555577-L</dni>
+		</profesor>
+		
+		<alumno>
+			<nombre>Santiago</nombre>
+			<apellido1>Segura</apellido1>
+			<apellido2>Suárez</apellido2>
+			<dni>55555599-S</dni>
+			<cualificacion>6</cualificacion>
+		</alumno>
+		
+		<alumno>
+			<nombre>María</nombre>
+			<apellido1>Mouriz</apellido1>
+			<apellido2>Muñoz</apellido2>
+			<dni>55555557-M</dni>
+			<cualificacion>7</cualificacion>
+		</alumno>
+
+	</modulo>
+	<normativa ref="1:-_2ab" />
+
+
+</acta>

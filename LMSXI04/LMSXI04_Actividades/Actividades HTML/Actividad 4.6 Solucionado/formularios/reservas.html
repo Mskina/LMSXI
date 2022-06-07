@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+</head>
+<body>
+    <h1>Reservas lunch</h1>
+    <form action="http://localhost/ud4/formulario.php" 
+    method="post">
+
+    <div>
+        <label for="fecha">Introduzca fecha:</label>
+        <input type="date" name="fecha" id="fecha" required value="2022-01-21" min="2022-01-21" max="2022-01-31">
+    </div>
+
+    <div>
+        <label for="hora">Introduzca hora comida:</label>
+        <input type="time" name="hora" id="hora" min="13:00" max="15:00" value="13:00">
+    </div>
+
+    <fieldset>
+        <legend>Ubicación</legend>
+
+        <input type="radio" name="ubicacion" id="interior" value="interior-valor">
+        <label for="interior">Interior</label>
+        <input type="radio" name="ubicacion" id="terraza" checked value="terraza-valor">
+        <label for="terraza">Terraza</label>
+    </fieldset>
+
+
+    <div>
+        <label for="alerg">Introduzca si es alérgico a alguno de los siguientes elementos:</label>
+        <select name="alerg[]" id="alerg" multiple>
+            <option value="" disabled>--</option>
+            <option value="leche">Leche</option>
+            <option value="huevo">Huevo</option>
+            <option value="gluten">Gluten</option>
+
+
+
+        </select>
+    </div>
+
+    <div><input type="submit" value="Reservar"></div>
+
+</form>
+</body>
+</html>

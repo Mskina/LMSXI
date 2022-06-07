@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="UTF-8"  standalone="yes"?> 
+
+<hipermercado>
+	<categorias>
+		<categoria>
+			<categoriaID>1</categoriaID>
+			<nombre>Libros</nombre>
+		</categoria>
+		<categoria>
+			<categoriaID>2</categoriaID>
+			<nombre>Informática</nombre>
+		</categoria>
+		<categoria>
+			<categoriaID>3</categoriaID>
+			<nombre>Moda</nombre>
+		</categoria>
+		<categoria padreCategoriaID="1">
+			<categoriaID>5</categoriaID>
+			<nombre>Novela histórica</nombre>
+		</categoria>
+		<categoria padreCategoriaID="1">
+			<categoriaID>6</categoriaID>
+			<nombre>Ciencia Ficción</nombre>
+		</categoria>
+		<categoria padreCategoriaID="2">
+			<categoriaID>8</categoriaID>
+			<nombre>Portátiles</nombre>
+		</categoria>
+		<categoria padreCategoriaID="2">
+			<categoriaID>9</categoriaID>
+			<nombre>Ordenadores de sobremesa</nombre>
+		</categoria>
+		<categoria padreCategoriaID="2">
+			<categoriaID>10</categoriaID>
+			<nombre>Accesorios</nombre>
+		</categoria>
+		<categoria padreCategoriaID="3">
+			<categoriaID>11</categoriaID>
+			<nombre>Moda mujer</nombre>
+		</categoria>
+		<categoria padreCategoriaID="3">
+			<categoriaID>12</categoriaID>
+			<nombre>Moda hombre</nombre>
+		</categoria>
+	</categorias>
+
+
+	<productos>
+		<producto productoID="1">
+			<nombre>Memorias de Adriano</nombre>
+			<categoria>5</categoria>
+			<precio>17.95</precio>
+
+		</producto>
+		<producto productoID="2">
+			<nombre>Los pilares de la Tierra</nombre>
+			<categoria>5</categoria>
+			<precio>15.95</precio>
+
+		</producto>
+
+		<producto productoID="3">
+			<nombre>1984</nombre>
+			<categoria>6</categoria>
+			<precio>9.00</precio>
+
+		</producto>
+		<producto productoID="4">
+			<nombre> Portátil - LG Gram 14Z90P-G.AA57B, 14" WUXGA, Intel® Evo™ 	Core™ i5-1135G7, 16GB RAM, 512 GB SSD, Iris® Xe, W10
+			</nombre>
+			<categoria>8</categoria>
+			<precio>499</precio>
+
+		</producto>
+
+		<producto productoID="5">
+			<nombre> Convertible 2 en 1 - Acer Chromebook Spin 514, 14" FHD,
+				Athlon Silver 3050C, 4 GB RAM, 64 GB, ChromeOS, Plata
+			</nombre>
+			<categoria>8</categoria>
+			<precio>699</precio>
+
+		</producto>
+		<producto productoID="6">
+			<nombre> Portátil - Lenovo IdeaPad 3 15IGL05, 15.6" FHD, Intel® Celeron® N4020, 8GB RAM, 256GB SSD, UHD 600, FDOS
+			</nombre>
+			<categoria>8</categoria>
+			<precio>399</precio>
+
+		</producto>
+		<producto productoID="7">
+			<nombre> PC Sobremesa - Lenovo IdeaCentre 5 14ARE05, AMD Ryzen™ 5 4600G, 8 GB RAM, 512 GB SSD, Radeon™ Graphics, W10
+			</nombre>
+			<categoria>9</categoria>
+			<precio>519</precio>
+
+
+		</producto>
+		<producto productoID="8">
+			<nombre>Auriculares gaming - FR-TEC Inari, Para PS4 y PS5, Micrófono,	Negro
+			</nombre>
+			<categoria>10</categoria>
+			<precio>29</precio>
+
+		</producto>
+
+		<producto productoID="9">
+			<nombre>Tommy Hilfiger Vestido liso de oxford con manga corta
+			</nombre>
+			<categoria>11</categoria>
+			<precio>110</precio>
+
+		</producto>
+
+		<producto productoID="10">
+			<nombre>Alfa Vestido chochet
+			</nombre>
+			<categoria>11</categoria>
+			<precio>110</precio>
+
+		</producto>
+
+		<producto productoID="11">
+			<nombre>Menorquinas de piel en color azul claro
+			</nombre>
+			<categoria>11</categoria>
+			<precio>55</precio>
+
+		</producto>
+
+
+		<producto productoID="12">
+			<nombre> Polo piqué de hombre classic azul de manga corta
+			</nombre>
+			<categoria>12</categoria>
+			<precio> 90</precio>
+
+		</producto>
+		<producto productoID="13">
+			<nombre> Polo piqué de hombre classic rojo de manga larga
+			</nombre>
+			<categoria>12</categoria>
+			<precio> 105</precio>
+
+		</producto>
+	</productos>
+</hipermercado>
