@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<alumno>
+	<nombre>Jorge</nombre>
+	<apellido1>Sánchez</apellido1>
+	<direccion>
+		<calle>C/ Falsa nº 0</calle>
+		<localidad>Palencia</localidad>
+		<codigo_Postal>34001</codigo_Postal>
+		<pais>España</pais>
+	</direccion>
+	<telefonos>
+		<telefono tipo="fijo">999 999 999</telefono>
+		<telefono tipo="movil">666 666 666</telefono>
+	</telefonos>
+</alumno>

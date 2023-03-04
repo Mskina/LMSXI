@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pedido xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="pedido.xsd" num="P-0001" fecha_hora="2021-10-22T17:54:12">
+	<cliente id="C-999">
+		<apellidos>Díaz Zapata</apellidos>
+		<nombre>Rita</nombre>
+		<dni>12345678B</dni>
+		<!-- <nie>Y1234567</nie> -->
+		<direccion_facturacion>
+			<tipo_via>Avenida</tipo_via>
+			<nombre_via>de Madrid</nombre_via>
+			<numero_via>23</numero_via>
+			<planta>4</planta>
+			<poblacion>Vigo</poblacion>
+			<provincia>Pontevedra</provincia>
+			<!-- <pais>España</pais> -->
+		</direccion_facturacion>
+	</cliente>
+	<producto id="P-aaa">
+		Set de regalo especial cumpleaños
+		<precio>185</precio>
+		<unidades>1</unidades>
+	</producto>
+	<producto id="P-bbb1">
+		Estuche Champagnes Moët &amp; Chandon Brut Impérial Estuche 3 botellas
+		<precio>119.54</precio>
+		<unidades>1</unidades>
+	</producto>
+	<datos_envio cliente="C-999">
+		<!-- atributo por defecto opcional:  tipo="estandar"-->
+
+		<!-- Como coinciden las direcciones, no es necesario, pero el esquema ha de contemplarlo:
+			 <destinatario>
+			<apellidos></apellidos>
+			<nombre></nombre>
+		</destinatario>
+		<direccion_envio>
+			<tipo_via>Avenida</tipo_via>
+			<nombre_via>de Madrid</nombre_via>
+			<numero_via>23</numero_via>
+			<planta>4</planta>
+			<poblacion>Vigo</poblacion>
+			<provincia>Pontevedra</provincia>
+		</direccion_envio> -->
+	</datos_envio>
+	<total> 304.54
+    </total>
+</pedido>

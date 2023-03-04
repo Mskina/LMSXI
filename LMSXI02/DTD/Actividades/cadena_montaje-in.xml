@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cadena_montaje [
+    <!ELEMENT cadena_montaje (responsable, operario+, vehiculo*)>
+    <!ELEMENT responsable (nombre, apellidos, (dni|nie))>
+    <!ELEMENT operario (nombre, apellidos, (dni|nie))>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ELEMENT dni (#PCDATA)>
+    <!ELEMENT nie (#PCDATA)>
+    <!ELEMENT vehiculo (pieza*)>
+    <!ELEMENT pieza (proveedor, fecha_fabricacion)>
+    <!ELEMENT proveedor (#PCDATA)>
+    <!ELEMENT fecha_fabricacion (#PCDATA)>
+    <!ATTLIST cadena_montaje fecha CDATA #REQUIRED>
+    <!ATTLIST cadena_montaje turno (M|T|N) #REQUIRED>
+    <!ATTLIST responsable eid ID #REQUIRED>
+    <!ATTLIST operario eid ID #REQUIRED>
+    <!ATTLIST vehiculo vid ID #REQUIRED>
+    <!ATTLIST pieza pid ID #REQUIRED>
+    <!ATTLIST pieza operarios IDREFS #REQUIRED>
+]>
+<cadena_montaje fecha="2021-11-01" turno="M">
+    <responsable eid="GRM">
+        <nombre>Manuel</nombre>
+        <apellidos>Gómez Rodríguez</apellidos>
+        <dni></dni>
+    </responsable>
+    <operario eid="AOF">
+        <nombre>Fernando</nombre>
+        <apellidos>Alonso Ouviña</apellidos>
+        <nie></nie>
+    </operario>
+    <vehiculo vid="OU2993W">
+        <pieza pid="AE2121" operarios="GRM AOF">
+            <proveedor>Proveedor1</proveedor>
+            <fecha_fabricacion></fecha_fabricacion>
+        </pieza>
+    </vehiculo>
+</cadena_montaje>

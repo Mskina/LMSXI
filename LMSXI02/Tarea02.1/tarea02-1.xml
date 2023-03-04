@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE pedido SYSTEM "pedido.dtd">
+<pedido num="P-0001" fecha_hora="2021-10-01T17:54:12">
+    <cliente id="C-999">
+        <nombre>Rita</nombre>
+        <apellidos>Díaz Zapata</apellidos>
+        <dni>12345678-B</dni>
+        <direccion_facturacion>
+            <tipo_via>Avenida</tipo_via>
+            <nombre_via>de Madrid</nombre_via>
+            <numero_via>23</numero_via>
+            <bloque></bloque>
+            <planta>4º</planta>
+            <puerta></puerta>
+            <poblacion>Vigo</poblacion>
+            <provincia>Pontevedra</provincia>
+        </direccion_facturacion>
+    </cliente>
+    <producto id="P-aaa">
+        Set de regalo especial cumpleaños
+        <precio>185</precio>
+        <unidades>1</unidades>
+    </producto>
+    <producto id="P-bbb1">
+        Estuche Champagnes Moët &amp; Chandon Brut Impérial Estuche 3 botellas
+        <precio>119,54</precio>
+        <unidades>1</unidades>
+    </producto>
+    <datos_envio tipo="urgente">
+        <destinatario>
+            <apellidos>López Reyes</apellidos>
+            <nombre>Ana</nombre>
+        </destinatario>
+        <direccion_envio>
+            <tipo_via>Rue</tipo_via>
+            <nombre_via>Saint Jacques</nombre_via>
+            <numero_via>nº1</numero_via>
+            <bloque></bloque>
+            <planta>5º</planta>
+            <puerta>B</puerta>
+            <poblacion>Paris</poblacion>
+            <provincia>Paris</provincia>
+            <pais>Francia</pais>
+        </direccion_envio>
+    </datos_envio>
+    <total descuento="10">274,09</total>
+</pedido>

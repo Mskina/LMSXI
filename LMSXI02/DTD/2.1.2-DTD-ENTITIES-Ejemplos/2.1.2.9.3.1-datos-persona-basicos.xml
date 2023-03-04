@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Se usa la declaración de DTD externa en la que se usan entidades por parámetro, pero que se declaran
+en una declaración interna. 
+
+Si el documento XML a validar es la versión básica, 
+la entidad datos_basicos debe tener el valor INCLUDE y datos_ampliados debe tener el valor IGNORE.
+En caso contrario, la entidad datos_ampliados debe tener el valor INCLUDE y datos_basicos IGNORE.-->
+<!DOCTYPE persona SYSTEM "2.1.2.9.3.3-DTD-condicionales-datos-persona.dtd" 
+[
+<!ENTITY % datos_ampliados "IGNORE">
+<!ENTITY % datos_basicos "INCLUDE">
+]
+>
+<persona>
+   <nombre>Elsa</nombre>   
+   <edad>23</edad>
+</persona>

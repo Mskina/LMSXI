@@ -1,0 +1,99 @@
+(:
+1. Nombre y país de todos los artistas. Cada uno ha de estar envuelto en una etiqueta artista
+:)
+
+for $a in doc("artistas")/artistas/artista
+return <artista>{$a/nombreCompleto, $a/pais}</artista>
+
+
+(:
+2. El nombre (sin etiquetas) de los artistas que nacieron antes de 1500.
+:)
+
+for $a in doc("artistas")/artistas/artista
+where number($a/nacimiento)<1500
+return data($a/nombreCompleto)
+
+
+(:
+3. Nombre de los artistas para los que no hay año de fallecimiento
+:)
+
+for $a in doc("artistas")/artistas/artista
+where not($a/fallecimiento)
+return $a/nombreCompleto
+
+
+(:
+4. Una lista HTML desordenada con el nombre de los artistas nacidos en España
+:)
+
+<ul>
+{
+for $a in doc("artistas")/artistas/artista
+where $a/pais="España"
+return <li>{data($a/nombreCompleto)}</li>
+}
+</ul>
+
+
+(:
+5. El número de artistas nacidos antes de 1600
+:)
+
+sum(
+for $a in doc("artistas")/artistas/artista
+where number($a/nacimiento) < 1600
+return count($a/nacimiento)
+)
+
+
+(:
+6. Marca y modelo de las impresoras con más de un tamaño envuelto en etiquetas marca y modelo respectivamente. Por cada impresora, se pide una etiqueta impresora envolvente.
+:)
+
+for $a in doc("impresoras")/impresoras/impresora
+where count($a/tamaño)>1
+return <impresora>{
+  <marca>{data($a/marca)}</marca>,
+<modelo>{data($a/modelo)}</modelo>
+}</impresora>
+
+
+(:
+7. Los diferentes tipos de impresora ordenados alfabéticamente en orden descendente
+:)
+
+distinct-values(
+for $a in doc("impresoras")/impresoras/impresora
+order by $a/@tipo descending
+return data($a/@tipo)
+)
+
+
+(:
+8. Los textos de la etiqueta title de los elementos item ordenados por title
+:)
+
+for $a in doc("comingsoon")/rss/channel/item
+order by $a/title
+return data($a/title)
+
+
+(:
+9. El texto de los elementos title de item cuya fecha de publicación tiene lugar en abril y no tiene lugar los viernes
+:)
+
+for $a in doc("comingsoon")/rss/channel/item
+where contains(data($a/pubDate),"Apr") and not(contains(data($a/pubDate), "Fri"))
+return data($a/title)
+
+
+(:
+10. Las diferentes categorías que tiene un item en todo el documento ordenadas alfabéticamente sin importar mayúsculas o minúsculas en el orden. No debe haber repetidos en la salida
+:)
+
+for $a in doc("comingsoon")/rss/channel/item/category
+group by $a
+order by lower-case($a)
+return data($a)

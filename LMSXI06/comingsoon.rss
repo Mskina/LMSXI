@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Coming Soon</title>
+    <link>https://rss.itunes.apple.com/api/v1/us/apple-music/coming-soon/all/10/explicit.rss</link>
+    <lastBuildDate>Fri, 9 Apr 2021 01:58:41 -0700</lastBuildDate>
+    <atom:link rel="self" type="application/rss+xml" href="https://rss.itunes.apple.com/api/v1/us/apple-music/coming-soon/all/10/explicit.rss"/>
+    <atom:link rel="alternate" type="text/html" href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewRoom?fcId=1396220241&amp;app=music"/>
+    <description>iTunes Store : Coming Soon</description>
+    <category>iTunes Store</category>
+    <copyright>Copyright © 2018 Apple Inc. All rights reserved.</copyright>
+    <item>
+      <title>Scaled And Icy - twenty one pilots</title>
+      <category domain="https://music.apple.com/us/artist/twenty-one-pilots/349736311?app=music">twenty one pilots</category>
+      <link>https://music.apple.com/us/album/scaled-and-icy/1561836997?app=music</link>
+      <guid>https://music.apple.com/us/album/scaled-and-icy/1561836997?app=music</guid>
+      <description>Scaled And Icy</description>
+      <category>album</category>
+      <category>Alternative</category>
+      <category>Music</category>
+      <pubDate>Wed, 7 Apr 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>*O*R - Olivia Rodrigo</title>
+      <category domain="https://music.apple.com/us/artist/olivia-rodrigo/979458609?app=music">Olivia Rodrigo</category>
+      <link>https://music.apple.com/us/album/o-r/1560735414?app=music</link>
+      <guid>https://music.apple.com/us/album/o-r/1560735414?app=music</guid>
+      <description>*O*R</description>
+      <category>album</category>
+      <category>Pop</category>
+      <category>Music</category>
+      <pubDate>Fri, 21 May 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Fortitude - GOJIRA</title>
+      <category domain="https://music.apple.com/us/artist/gojira/65158676?app=music">GOJIRA</category>
+      <link>https://music.apple.com/us/album/fortitude/1553446829?app=music</link>
+      <guid>https://music.apple.com/us/album/fortitude/1553446829?app=music</guid>
+      <description>Fortitude</description>
+      <category>album</category>
+      <category>Metal</category>
+      <category>Music</category>
+      <category>Rock</category>
+      <pubDate>Fri, 30 Apr 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Daddy's Home - St. Vincent</title>
+      <category domain="https://music.apple.com/us/artist/st-vincent/198271209?app=music">St. Vincent</category>
+      <link>https://music.apple.com/us/album/daddys-home/1552955481?app=music</link>
+      <guid>https://music.apple.com/us/album/daddys-home/1552955481?app=music</guid>
+      <description>Daddy's Home</description>
+      <category>album</category>
+      <category>Alternative</category>
+      <category>Music</category>
+      <pubDate>Fri, 14 May 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Heart - Eric Church</title>
+      <category domain="https://music.apple.com/us/artist/eric-church/123055194?app=music">Eric Church</category>
+      <link>https://music.apple.com/us/album/heart/1547677185?app=music</link>
+      <guid>https://music.apple.com/us/album/heart/1547677185?app=music</guid>
+      <description>Heart</description>
+      <category>album</category>
+      <category>Country</category>
+      <category>Music</category>
+      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Soul - Eric Church</title>
+      <category domain="https://music.apple.com/us/artist/eric-church/123055194?app=music">Eric Church</category>
+      <link>https://music.apple.com/us/album/soul/1547677830?app=music</link>
+      <guid>https://music.apple.com/us/album/soul/1547677830?app=music</guid>
+      <description>Soul</description>
+      <category>album</category>
+      <category>Country</category>
+      <category>Music</category>
+      <pubDate>Fri, 23 Apr 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Golden Wings (Apple Music Up Next Film Edition) - EP - Zoe Wees</title>
+      <category domain="https://music.apple.com/us/artist/zoe-wees/1470589518?app=music">Zoe Wees</category>
+      <link>https://music.apple.com/us/album/golden-wings-apple-music-up-next-film-edition-ep/1561820793?app=music</link>
+      <guid>https://music.apple.com/us/album/golden-wings-apple-music-up-next-film-edition-ep/1561820793?app=music</guid>
+      <description>Golden Wings (Apple Music Up Next Film Edition) - EP</description>
+      <category>album</category>
+      <category>Pop</category>
+      <category>Music</category>
+      <pubDate>Fri, 21 May 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>42 - Sech</title>
+      <category domain="https://music.apple.com/us/artist/sech/579050972?app=music">Sech</category>
+      <link>https://music.apple.com/us/album/42/1558956285?app=music</link>
+      <guid>https://music.apple.com/us/album/42/1558956285?app=music</guid>
+      <description>42</description>
+      <category>album</category>
+      <category>Urbano latino</category>
+      <category>Music</category>
+      <category>Latin</category>
+      <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>McCartney III Imagined - Paul McCartney</title>
+      <category domain="https://music.apple.com/us/artist/paul-mccartney/12224?app=music">Paul McCartney</category>
+      <link>https://music.apple.com/us/album/mccartney-iii-imagined/1557554388?app=music</link>
+      <guid>https://music.apple.com/us/album/mccartney-iii-imagined/1557554388?app=music</guid>
+      <description>McCartney III Imagined</description>
+      <category>album</category>
+      <category>Rock</category>
+      <category>Music</category>
+      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Here on Earth (Ultimate Edition / Video Deluxe) - Tim McGraw</title>
+      <category domain="https://music.apple.com/us/artist/tim-mcgraw/3496236?app=music">Tim McGraw</category>
+      <link>https://music.apple.com/us/album/here-on-earth-ultimate-edition-video-deluxe/1560386782?app=music</link>
+      <guid>https://music.apple.com/us/album/here-on-earth-ultimate-edition-video-deluxe/1560386782?app=music</guid>
+      <description>Here on Earth (Ultimate Edition / Video Deluxe)</description>
+      <category>album</category>
+      <category>Country</category>
+      <category>Music</category>
+      <category>Contemporary Country</category>
+      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,39 @@
+<!-- Aquí declaro la entidad de dirección junto con los elementos que la conforman -->
+<!ENTITY % direccion "tipo_via, nombre_via, numero_via?, bloque?, planta?, puerta?, poblacion, provincia, pais?">
+<!ELEMENT tipo_via (#PCDATA)>
+<!ELEMENT nombre_via (#PCDATA)>
+<!ELEMENT numero_via (#PCDATA)>
+<!ELEMENT bloque (#PCDATA)>
+<!ELEMENT planta (#PCDATA)>
+<!ELEMENT puerta (#PCDATA)>
+<!ELEMENT poblacion (#PCDATA)>
+<!ELEMENT provincia (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!-- Aquí declaro la entidad de datos personales junto con los elementos que la conforman -->
+<!ENTITY % personal "(nombre, apellidos)|(apellidos, nombre)"> <!-- Está declarado de esa forma porque se indica que pueden aparecer como nombre+apellidos o apellidos+nombre -->
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!-- pedido -->
+<!ELEMENT pedido (cliente, producto+, datos_envio, total)>
+<!ATTLIST pedido num ID #REQUIRED>
+<!ATTLIST pedido fecha_hora NMTOKEN #REQUIRED>
+<!-- cliente -->
+<!ELEMENT cliente ((%personal;), (dni|nie), direccion_facturacion)>
+<!ATTLIST cliente id ID #REQUIRED>
+<!ELEMENT dni (#PCDATA)>
+<!ELEMENT nie (#PCDATA)>
+<!ELEMENT direccion_facturacion (%direccion;)>
+<!-- producto -->
+<!ELEMENT producto (#PCDATA|precio|unidades)*>
+<!ATTLIST producto id ID #REQUIRED>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT unidades (#PCDATA)>
+<!-- datos_envio -->
+<!ELEMENT datos_envio (destinatario, direccion_envio)?>
+<!ATTLIST datos_envio tipo (estándar|urgente) "estándar">
+<!ATTLIST datos_envio cliente IDREF #IMPLIED>
+<!ELEMENT destinatario (%personal;)>
+<!ELEMENT direccion_envio (%direccion;)>
+<!-- total -->
+<!ELEMENT total (#PCDATA)>
+<!ATTLIST total descuento CDATA #IMPLIED>

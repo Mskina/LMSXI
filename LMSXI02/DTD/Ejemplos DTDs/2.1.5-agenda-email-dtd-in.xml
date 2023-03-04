@@ -1,0 +1,33 @@
+<!DOCTYPE agenda [
+<!ELEMENT agenda (contacto)+> 
+<!ELEMENT contacto (nombre, apellido1, apellido2, (telefonos|email))>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido1 (#PCDATA)>
+<!ELEMENT apellido2 (#PCDATA)>
+<!ELEMENT telefonos (telefono)+>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ATTLIST telefono tipo (movil|fijo) #REQUIRED>
+]>
+<agenda>
+	<contacto>
+		<nombre>Juan </nombre>
+		<apellido1>López</apellido1>
+		<apellido2>Hernández</apellido2>
+		<telefonos>
+			<telefono tipo="movil">
+650 999 999
+			</telefono>
+			<telefono tipo="fijo">
+986 11 11 11
+			</telefono>
+		</telefonos>
+	</contacto>
+
+	<contacto>
+		<nombre>Ana </nombre>
+		<apellido1>Roca</apellido1>
+		<apellido2>Martínez</apellido2>
+		<email>ana@ejemplo.com</email>
+	</contacto>
+</agenda>

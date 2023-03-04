@@ -1,0 +1,28 @@
+<!DOCTYPE pedido [
+<!ELEMENT pedido (item)+>
+<!-- Contenido mixto -->
+<!ELEMENT item (#PCDATA | id |
+ nombre | descripcion | precio)*>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+]>
+<!-- Supongamos que cada item de pedido tiene un origen diferente y puede venir con XML estructurado:
+	id, nombre, descripcion, precio, un único texto o combinaciones de esos elementos -->
+<pedido>
+	<item>
+	  <id>123</id>
+	  <nombre>Ratón Logitech</nombre>
+	  <descripcion>Óptico inalámbrico ergonómico</descripcion>
+	  <precio>13.50€</precio>
+	</item>
+	<item>
+	  457:Teclado mecánico, 34.95€
+	</item>
+	<item>
+	  Small metallic device for assisting in flotalating.
+	  <nombre>Metallic Flotalator</nombre>
+	  <precio>.50</precio>
+	</item>
+  </pedido>

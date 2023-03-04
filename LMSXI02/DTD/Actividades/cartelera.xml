@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone='yes'?>
+<cartelera>
+    <pelicula genero='Aventura Fantástica'>
+        <titulo>Shang-Chi y la leyenda de los diez anillos
+		</titulo>
+        <titulo_vo>
+Shang-Chi and the Legend of the Ten Rigns
+		</titulo_vo>
+        <fecha_estreno>
+2021-09-03
+		</fecha_estreno>
+        <direccion>
+            Destin Cretton
+            <ayudante>Leslie Norton</ayudante>
+            <ayudante>Brian Joe</ayudante>
+        </direccion>
+        <sesion fecha="2021-09-24">
+            <hora>20:15</hora>
+            <hora>23:00</hora>
+        </sesion>
+        <sesion fecha="2021-09-25">
+            <hora>20:15</hora>
+            <hora>23:00</hora>
+        </sesion>
+        <sesion fecha="2021-09-26">
+            <hora>20:15</hora>
+            <hora>23:00</hora>
+        </sesion>
+        <sesion fecha="2021-09-27">
+            <hora>20:15</hora>
+            <hora>23:00</hora>
+        </sesion>
+        <cartel>cartel1.jpeg</cartel>
+    </pelicula>
+    <pelicula genero="Animación">
+        <titulo>
+La patrulla canina: La película
+		</titulo>
+        <titulo_vo>
+Paw patrol: The movie
+		</titulo_vo>
+        <fecha_estreno>
+2021-08-27
+		</fecha_estreno>
+        <direccion>
+Cal Brunker
+		</direccion>
+        <sesion fecha="2021-09-24">
+            <hora>17:10</hora>
+        </sesion>
+        <sesion fecha="2021-09-25">
+            <hora>17:10</hora>
+        </sesion>
+        <sesion fecha="2021-09-26">
+            <hora>17:10</hora>
+        </sesion>
+        <sesion fecha="2021-09-27">
+            <hora>17:10</hora>
+        </sesion>
+        <cartel>cartel2.jpeg</cartel>
+    </pelicula>
+    <pelicula>
+        <titulo>
+            <!-- El uso de la entidad &apos; no es necesario, pero se incluye por mostrar un ejemplo de uso-->
+            D &apos;Artacán y los tres Mosqueperros
+        </titulo>
+        <titulo_vo></titulo_vo>
+        <fecha_estreno>
+2021-08-18
+		</fecha_estreno>
+        <direccion>
+            Toni García
+            <ayudante>Ramón Rodríguez</ayudante>
+        </direccion>
+        <sesion fecha="2021-09-24">
+            <hora>16:00</hora>
+        </sesion>
+        <sesion fecha="2021-09-25">
+            <hora>16:00</hora>
+        </sesion>
+        <sesion fecha="2021-09-26">
+            <hora>16:00</hora>
+        </sesion>
+        <sesion fecha="2021-09-27">
+            <hora>16:00</hora>
+        </sesion>
+        <cartel>cartel3.jpeg</cartel>
+    </pelicula>
+</cartelera>

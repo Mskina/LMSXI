@@ -1,0 +1,7 @@
+<!DOCTYPE ejemplo_texto [
+    <!ELEMENT ejemplo_texto (texto)>
+    <!ELEMENT texto (#PCDATA)>
+]>
+<ejemplo_texto>
+    <texto>Aquí texto </texto>
+</ejemplo_texto>

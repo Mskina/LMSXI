@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE banco [
+<!ELEMENT banco ((empleados)+, (departamentos)+)>
+    <!ELEMENT empleados (empleado)*>
+    <!ELEMENT empleado (#PCDATA)>
+    <!ATTLIST empleado
+        id ID #REQUIRED
+        jefe IDREF #IMPLIED
+    >
+    <!ELEMENT departamentos (departamento)+>
+    <!ELEMENT departamento (nombre)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ATTLIST departamento jefes IDREFS #REQUIRED>
+]>
+<banco>
+<empleados>
+    <empleado id="a1">Patricia Botín</empleado>
+    <empleado id="a2" jefe="a1">Lucas Moreno</empleado>
+    <empleado id="a3" jefe="a2">Ana López</empleado>
+
+    
+</empleados>
+<departamentos>
+    <departamento jefes="a1 a2">
+        <nombre>RR.HH.</nombre>
+    </departamento> 
+
+</departamentos>
+</banco>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<cuestionario>
+	<titulo>Cuestionario de la tarea 01 del módulo de Lenguajes de marcas y Sistemas de Gestión de Información</titulo>
+	<fecha>2021-11-23</fecha>
+	<modulo>MP0373</modulo>
+	<unidad_didactica>UD1</unidad_didactica>
+	<profesora/>	<!-- "El elemento vacío es: María Fernández Rodríguez" -->
+	
+	<pregunta tipo="VF">		<!-- Empleo VF (Verdadero/Falso) para especificar que únicamente habrá una respuesta correcta -->
+		<orden>1</orden>
+		<puntuacion>2</puntuacion>
+		<enunciado>En el comienzo de los nombres de los elementos XML no se permite un carácter numérico</enunciado>
+		<opciones>
+			<respuesta correcta="true">Verdadero</respuesta>	<!-- Empleo true para indicar que la respuesta es correcta -->
+			<respuesta>Falso</respuesta>
+		</opciones>
+	</pregunta>
+	
+	<pregunta tipo="RM">	<!-- Empleo RM (Respuesta Múltiple) para especificar que puede haber varias respuestas correctas -->
+		<orden>2</orden>
+		<puntuacion>3</puntuacion>
+		<enunciado>¿Qué caracteres de los siguientes están permitidos en el texto entre la etiqueta de apertura y cierre de un elemento escritos con un único carácter?</enunciado>
+		<opciones>
+			<respuesta>&lt;</respuesta>
+			<respuesta correcta="true">&gt;</respuesta>
+			<respuesta correcta="true">&quot;</respuesta>
+			<respuesta>&amp;</respuesta>
+		</opciones>
+	</pregunta>
+</cuestionario>

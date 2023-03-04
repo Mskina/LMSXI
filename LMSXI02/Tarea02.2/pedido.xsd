@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="pedido">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="cliente" type="tipo_cliente" />
+                <xs:element name="producto" type="tipo_producto" maxOccurs="unbounded" />
+                <xs:element name="datos_envio" type="tipo_datos_envio" />
+                <xs:element name="total" type="tipo_precio_total" />
+            </xs:sequence>
+            <xs:attribute name="num" use="required" type="xs:ID" />
+            <xs:attribute name="fecha_hora" type="xs:dateTime" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Creo el tipo para los datos del CLIENTE -->
+    <xs:complexType name="tipo_cliente">
+        <xs:sequence>
+            <xs:group ref="tipo_nombres_apellidos_viceversa" />
+            <xs:choice>
+                <xs:element name="dni" type="tipo_dni" />
+                <xs:element name="nie" type="tipo_nie" />
+            </xs:choice>
+            <xs:element name="direccion_facturacion" type="tipo_direccion" />
+        </xs:sequence>
+        <xs:attribute name="id" use="required" type="xs:ID" />
+    </xs:complexType>
+
+    <!-- Creo la AGRUPACIÓN que me permite reusar la elección nombre+apellidos/apellidos+nombre -->
+    <xs:group name="tipo_nombres_apellidos_viceversa">
+        <xs:choice>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string" />
+                <xs:element name="apellidos" type="xs:string" />
+            </xs:sequence>
+            <xs:sequence>
+                <xs:element name="apellidos" type="xs:string" />
+                <xs:element name="nombre" type="xs:string" />
+            </xs:sequence>
+        </xs:choice>
+    </xs:group>
+
+    <!-- Creo las restricciones de formato para DNI y NIE -->
+    <xs:simpleType name="tipo_dni">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{8}[A-Z]" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipo_nie">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[XY][0-9]{7}[A-Z]" /> <!-- El NIE acaba en letra pero no lo pide? -->
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Creo el tipo para el PRODUCTO -->
+    <xs:complexType mixed="true" name="tipo_producto">
+        <xs:sequence>
+            <xs:element name="precio" type="tipo_moneda" />
+            <xs:element name="unidades" type="xs:positiveInteger" />
+        </xs:sequence>
+        <xs:attribute name="id" use="required" type="xs:ID" />
+    </xs:complexType>
+
+    <!-- Creo la restricción para la MONEDA -->
+    <xs:simpleType name="tipo_moneda">
+        <xs:restriction base="xs:decimal">
+            <xs:fractionDigits value="2" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Tipo PRECIO TOTAL derivado del TIPO MONEDA -->
+    <xs:complexType name="tipo_precio_total">
+        <xs:simpleContent>
+            <xs:extension base="tipo_moneda">
+                <xs:attribute name="descuento" type="tipo_moneda" />
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <!-- Creo el tipo para la DIRECCIÓN -->
+    <xs:complexType name="tipo_direccion">
+        <xs:sequence>
+            <xs:element name="tipo_via" type="xs:string" />
+            <xs:element name="nombre_via" type="xs:string" />
+            <xs:element name="numero_via" type="xs:string" minOccurs="0" />
+            <xs:element name="bloque" type="xs:string" minOccurs="0" />
+            <xs:element name="planta" type="xs:positiveInteger" minOccurs="0" />
+            <xs:element name="puerta" type="xs:string" minOccurs="0" />
+            <xs:element name="poblacion" type="xs:string" />
+            <xs:element name="provincia" type="xs:string" />
+            <xs:element name="pais" type="xs:string" default="España" minOccurs="0" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Creo el tipo para los DATOS ENVÍO -->
+    <xs:complexType name="tipo_datos_envio">
+        <xs:sequence minOccurs="0" maxOccurs="1">
+            <xs:element name="destinatario">
+                <xs:complexType>
+                    <xs:group ref="tipo_nombres_apellidos_viceversa" />
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="direccion_envio" />
+        </xs:sequence>
+        <xs:attribute name="tipo" type="tipo_envio" default="estandar" />
+        <xs:attribute name="cliente" type="xs:IDREF" />
+    </xs:complexType>
+
+    <!-- Creo el tipo para el TIPO ENVÍO -->
+    <xs:simpleType name="tipo_envio">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="estandar" />
+            <xs:enumeration value="urgente" />
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

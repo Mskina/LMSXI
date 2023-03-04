@@ -1,0 +1,16 @@
+<!ELEMENT carta (emisor, receptor)>
+<!ENTITY % datos_direccion "tipo_via, nombre_via, numero?, bloque?, piso, letra">
+<!-- La entidad datos_personales hace referencia a su vez a la entidad datos_direccion -->
+<!ENTITY % datos_personales "nombre, apellidos, %datos_direccion;">
+<!ELEMENT emisor (%datos_personales;)>
+<!ELEMENT receptor (%datos_personales;)>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+
+<!ELEMENT tipo_via (#PCDATA)>
+<!ELEMENT nombre_via (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT bloque (#PCDATA)>
+<!ELEMENT piso (#PCDATA)>
+<!ELEMENT letra (#PCDATA)>

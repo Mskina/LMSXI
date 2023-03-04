@@ -1,0 +1,17 @@
+<!DOCTYPE articulos [
+    <!ELEMENT articulos (articulo)*>
+    <!ELEMENT articulo (nombre, palabras_clave)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT palabras_clave EMPTY>
+    <!ATTLIST articulo referencia NMTOKEN #REQUIRED>
+    <!ATTLIST articulo puntuacion CDATA #REQUIRED>
+    <!ATTLIST palabras_clave valor NMTOKENS #IMPLIED>
+]>
+
+<articulos>
+    <articulo referencia="001243A-B-C" puntuacion="*****">
+        <nombre>Aspirador sin cable</nombre>
+        <palabras_clave valor="hogar higiene menaje" />
+    </articulo>
+    <!-- aquí podría haber más artículos -->
+</articulos>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<billboard>
+	<cancion>
+		<titulo>Stay</titulo>
+		<interprete>The Kid LAROI</interprete>
+		<interprete>Justin Bieber</interprete>
+		<anho/>
+		<peak>1</peak>
+	</cancion>
+	<cancion>
+		<titulo>Industry Baby</titulo>
+		<interprete>Lil Nas X</interprete>
+		<interprete>Jack Harlow</interprete>
+		<anho/>
+		<peak>2</peak>
+	</cancion>
+</billboard>

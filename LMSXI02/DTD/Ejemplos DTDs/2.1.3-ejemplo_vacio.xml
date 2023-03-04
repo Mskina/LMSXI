@@ -1,0 +1,7 @@
+<!DOCTYPE ejemplo_vacio [
+    <!ELEMENT ejemplo_vacio (vacio)>
+    <!ELEMENT vacio EMPTY>
+]>
+<ejemplo_vacio>
+    <vacio/>
+</ejemplo_vacio>

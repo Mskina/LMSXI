@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cliente	xmlns="www.dam.gal/LMSXI/UD1/T01/clientes"
+			xmlns:ped="www.dam.gal/LMSXI/UD1/T01/pedidos">
+	<numero_ID>12341234</numero_ID>
+	<nombre>Lucas</nombre>
+	<telefono>666666999</telefono>
+	<ped:pedido>
+		<ped:numero_ID>00001</ped:numero_ID>
+		<ped:articulo>Lápiz
+			<ped:precio>0,25</ped:precio>
+		</ped:articulo>
+	</ped:pedido>
+</cliente>

@@ -1,0 +1,17 @@
+<!-- Se reutilizan las entidades datos_basicos y datos_ampliados, pero no se declaran en este documento.
+Se declararán en la DTD interna en el documento XML que valide contra esta DTD.
+Es posible que Visual Studio Code detecte un error en esta DTD.
+Esto es lógico pues la  definición de las entidades se hará en la DTD interna.
+-->
+<![ %datos_basicos; [
+   <!ELEMENT persona (nombre, edad)>
+]]>
+
+<![ %datos_ampliados;[
+   <!ELEMENT persona (nombre, apellidos, edad, ciudad)>
+]]>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>
+<!ELEMENT ciudad (#PCDATA)>

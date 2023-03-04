@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+ <channel>
+  <title>Wikipedia - Cambios recientes [es]</title>
+  <link>https://es.wikipedia.org/wiki/Especial%3ACambiosRecientes</link>
+  <description>Realiza un seguimiento de los cambios más recientes en la wiki en este canal.</description>
+  <item>
+   <title>La casa de azúcar</title>
+  </item>
+ </channel>
+</rss>

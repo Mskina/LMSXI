@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE deportistas [
+<!ELEMENT deportistas (nombre)*>
+<!ELEMENT nombre (#PCDATA)>
+<!ATTLIST nombre        
+        sponsor CDATA 'Nike'
+        id ID #REQUIRED
+        nacionalidad CDATA  #FIXED 'es'
+        internacional CDATA #IMPLIED
+        category (futbol|tenis|volleyball) #REQUIRED
+    >
+<!-- sponsor: atributo de nombre  de tipo carácter y valor por defecto Nike -->
+<!-- id: atributo obligatorio de nombre  de tipo ID  -->
+<!-- nacionalidad: atributo de nombre  de tipo carácter y valor fijo "es" (si está presente) -->
+<!-- internacional: atributo opcional de nombre de tipo carácter -->
+<!-- category: atributo obligatorio de nombre enumerado con 3 posibles valores -->
+]>
+<deportistas>
+	<nombre id="A0001" internacional="yes" category="futbol" nacionalidad="es">Cristiano Ronaldo</nombre>
+	<nombre id="A0002" category="futbol" sponsor="Adidas" nacionalidad="es">Hugo Mallo</nombre>
+	<nombre id="A0003" category="tenis" internacional="yes">Rafa Nadal</nombre>
+	<nombre id="A0004" category="volleyball" internacional="yes"  sponsor="Puma"> Mario Ferrera </nombre>   
+</deportistas>

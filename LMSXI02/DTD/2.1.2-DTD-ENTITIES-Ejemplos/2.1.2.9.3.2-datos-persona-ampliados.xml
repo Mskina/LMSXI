@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE persona SYSTEM "2.1.2.9.3.3-DTD-condicionales-datos-persona.dtd" 
+[
+<!ENTITY % datos_ampliados "INCLUDE">
+<!ENTITY % datos_basicos "IGNORE">
+]
+>
+<persona>
+   <nombre>Elsa</nombre>
+   <apellidos>López Ruíz</apellidos>
+   <edad>23</edad>
+   <ciudad>León</ciudad>
+</persona>

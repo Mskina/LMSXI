@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE carta [
+<!ELEMENT carta (emisor, receptor)>
+
+<!ENTITY % datos_direccion "tipo_via, nombre_via, numero?, bloque?, piso, letra">
+<!-- Las entidades por parámetro no pueden usarse en DTD internas -->
+<!ELEMENT emisor (%datos_direccion;)>
+<!ELEMENT receptor (%datos_direccion;)>
+<!ELEMENT tipo_via (#PCDATA)>
+<!ELEMENT nombre_via (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT bloque (#PCDATA)>
+<!ELEMENT piso (#PCDATA)>
+<!ELEMENT letra (#PCDATA)>
+
+
+]>
+<carta>
+    <emisor>
+        <tipo_via>Avenida</tipo_via>
+        <nombre_via>de Vigo</nombre_via>
+        <numero>2</numero>
+        <piso>1</piso>
+        <letra>D</letra>
+    </emisor>
+    <receptor>
+        <tipo_via>Calle</tipo_via>
+        <nombre_via>San Juan</nombre_via>
+        <piso>Bajo</piso>
+        <letra>E</letra>
+    </receptor>
+</carta>

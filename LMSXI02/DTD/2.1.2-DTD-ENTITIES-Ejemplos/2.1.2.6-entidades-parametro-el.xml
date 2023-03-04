@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE carta SYSTEM "2.1.2.6.1-direccion.dtd">
+<carta>
+    <emisor>
+        <nombre>Ana </nombre>
+        <apellidos>López Mar</apellidos>
+        <tipo_via>Avenida</tipo_via>
+        <nombre_via>de Vigo</nombre_via>
+        <numero>2</numero>
+        <piso>1</piso>
+        <letra>D</letra>
+    </emisor>
+    <receptor>
+        <nombre>Beatriz </nombre>
+        <apellidos>Luz Serrano</apellidos>
+        <tipo_via>Calle</tipo_via>
+        <nombre_via>San Juan</nombre_via>
+        <piso>Bajo</piso>
+        <letra>E</letra>
+    </receptor>
+</carta>

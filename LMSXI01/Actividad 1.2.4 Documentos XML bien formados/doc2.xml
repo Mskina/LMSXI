@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <comida>
+        <nombre>Waffles</nombre>
+        <precio>$2.00</precio>
+        <descripcion>Waffles baratos de McDonald&apos;s</descripcion>
+        <calorias>650</calorias>
+    </comida>
+    <comida>
+        <nombre>Hamburguesa</nombre>
+        <precio>$5.00</precio>
+        <descripcion>La hamburguesa mas común de McDonald&apos;s</descripcion>
+        <calorias>1500</calorias>
+    </comida>   
+    <comida>
+        <nombre>Menú napolitano</nombre>
+        <precio>$9.00</precio>
+        <descripcion>Bocata napolitano de Pans &amp; Company</descripcion>
+        <calorias>1500</calorias>
+    </comida> 
+</menu>
